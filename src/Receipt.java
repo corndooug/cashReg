@@ -7,12 +7,12 @@ import java.text.DecimalFormat;
 public class Receipt {
     public static void main(String[] args) {
         java.util.Date date = new java.util.Date();
-        DecimalFormat format = new DecimalFormat("0.00");
+        DecimalFormat deciform = new DecimalFormat("#,###.00");
         Map<Integer, String> cashiers = new HashMap<>();
 
         // Part 1: Validation stage
         int confirm = JOptionPane.showConfirmDialog
-            (null, "WOULD YOU LIKE TO PROCEED?", 
+            (null, "---WELCOME TO GADGET MEAL---\n"+"WOULD YOU LIKE TO PROCEED?", 
             "Confirm", 
             JOptionPane.YES_NO_OPTION, 
             JOptionPane.QUESTION_MESSAGE);
@@ -42,12 +42,10 @@ public class Receipt {
                 "==============================================================\n" +
                 "\033[1mRECEIPT NO.: \033[0m"+rcptNo+"\n"+
                 "\033[1mCASHIER:\033[0m " + name + "\n"+
-                "\033[1mDATE:\033[0m "+date+"\n"+
+                "\033[1mDATE ISSUED:\033[0m "+date+"\n"+
                 "--------------------------------------------------------------\n"+
-                "             PRD               QTY               PRC\n"+
+                "             CODE               QTY               PRC\n"+
                 "--------------------------------------------------------------\n");
-                String customerName = JOptionPane.showInputDialog
-                (null, "<html><font size='4'><font face='URW Gothic'><b>Enter Customer's Name</b></html>", "Name", JOptionPane.QUESTION_MESSAGE);
                 purchaseLoop.main(args);
             }
             else {
