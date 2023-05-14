@@ -43,9 +43,9 @@ public class Receipt {
                 "\033[1mRECEIPT NO.: \033[0m"+rcptNo+"\n"+
                 "\033[1mCASHIER:\033[0m " + name + "\n"+
                 "\033[1mDATE:\033[0m "+date+"\n"+
-                "==============================================================\n"+
+                "--------------------------------------------------------------\n"+
                 "             PRD               QTY               PRC\n"+
-                "==============================================================\n");
+                "--------------------------------------------------------------\n");
                 String customerName = JOptionPane.showInputDialog
                 (null, "<html><font size='4'><font face='URW Gothic'><b>Enter Customer's Name</b></html>", "Name", JOptionPane.QUESTION_MESSAGE);
                 purchaseLoop.main(args);

@@ -25,7 +25,7 @@ while (true) {
             int quantity = Integer.parseInt(JOptionPane.showInputDialog("How many pieces would you like to purchase?"));
             double tot = (items[i][1] * quantity);
             total += tot;
-            System.out.println("  " + itemCode + "  " + quantity + "  " + tot);
+            System.out.println("            "+itemCode+"                "+quantity+"              "+tot);
             break;
         }
     }
@@ -35,7 +35,15 @@ while (true) {
         continue;
     }
     else {
-        JOptionPane.showMessageDialog(null, "Thank you for shopping with us, " + customerName + "!\nYour total is ₱" + total);
+        double cash = Double.parseDouble(JOptionPane.showInputDialog(null, "Enter Cash Amount:", "Cash"));
+        double vat = total*0.12;
+        System.out.println("\n--------------------------------------------------------------\n"
+                          +"           SUBTOTAL      :                    "+total
+                          +"\n           VAT(12%)      :                    "+vat
+                          +"\n--------------------------------------------------------------\n"
+                          +"\n            TOTAL       :                     "+(total+vat)
+                          +"\n            CASH        :                     "+cash
+                          +"\n            CHANGE      :                     "+(cash-(total+vat)));
         break;
     }
 }

@@ -64,8 +64,9 @@ private static void Calculate() {
     
     String customerName = JOptionPane.showInputDialog
     (null, "<html><font size='4'><font face='URW Gothic'><b>Enter Customer's Name</b></html>", "Name", JOptionPane.QUESTION_MESSAGE);
-    double total = 0;
 
+
+    double total = 0;
     while (true) {
         int choice = Integer.parseInt(JOptionPane.showInputDialog("<html><font face='URW Gothic'><font size='5'><b>Code</b></html>\n"+
                 "<html><font face='URW Gothic'><font size='4'>[1001]      Atomic Habits by J. Clear (Paperback) - ₱199.75</html>\n"+
