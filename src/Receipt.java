@@ -12,7 +12,7 @@ public class Receipt {
 
         // Part 1: Validation stage
         int confirm = JOptionPane.showConfirmDialog
-            (null, "---WELCOME TO GADGET MEAL---\n"+"WOULD YOU LIKE TO PROCEED?", 
+            (null, "---WELCOME TO KENdiments---\n"+"WOULD YOU LIKE TO PROCEED?", 
             "Confirm", 
             JOptionPane.YES_NO_OPTION, 
             JOptionPane.QUESTION_MESSAGE);
@@ -36,15 +36,15 @@ public class Receipt {
                 "WELCOME " + name, "Welcome", JOptionPane.PLAIN_MESSAGE);
                 int rcptNo = Integer.parseInt(JOptionPane.showInputDialog("ENTER RECEIPT NO."));
                 System.out.println
-                ("                         \033[1m BooKenken \n" +
-                "           Velasco St., San Juan, La Union (2514)\n" +
-                "                   email: bookenken@gmail.com\033[0m\n" +
+                ("\n                            \033[1m KENdiments \n" +
+                "              Velasco St., San Juan, La Union (2514)\n" +
+                "                   email: kendiments@gmail.com\033[0m\n" +
                 "==============================================================\n" +
                 "\033[1mRECEIPT NO.: \033[0m"+rcptNo+"\n"+
                 "\033[1mCASHIER:\033[0m " + name + "\n"+
                 "\033[1mDATE ISSUED:\033[0m "+date+"\n"+
                 "--------------------------------------------------------------\n"+
-                "             CODE               QTY               PRC\n"+
+                "               CODE                QTY                PRC\n"+
                 "--------------------------------------------------------------\n");
                 purchaseLoop.main(args);
             }
