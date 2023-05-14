@@ -64,6 +64,7 @@ private static void Calculate() {
     
     String customerName = JOptionPane.showInputDialog
     (null, "<html><font size='4'><font face='URW Gothic'><b>Enter Customer's Name</b></html>", "Name", JOptionPane.QUESTION_MESSAGE);
+    double total = 0;
 
     while (true) {
         int choice = Integer.parseInt(JOptionPane.showInputDialog("<html><font face='URW Gothic'><font size='5'><b>Code</b></html>\n"+
@@ -81,7 +82,6 @@ private static void Calculate() {
                 if (choice == 1001) {
                     String itemCode = "1001ATM";
                     int quantity = Integer.parseInt(JOptionPane.showInputDialog(null, "How many pieces would you like to purchase?"));
-                    double total = 0;
                     double tot = (199.75 * quantity);
                     double price = 0;
                         for(int i = 0; i < items.length; i++) {
@@ -107,8 +107,6 @@ private static void Calculate() {
                 else if (choice == 1002){
                     String itemCode = "1002LWP";
                     int quantity = Integer.parseInt(JOptionPane.showInputDialog(null, "How many pieces would you like to purchase?"));
-                    double total = 0;
-                    
                     double tot = (148.50* quantity);
                     double price = 0;
                         for(int i = 0; i < items.length; i++) {
@@ -135,7 +133,6 @@ private static void Calculate() {
                     String itemCode = "1003MDS";
                     int quantity = Integer.parseInt(JOptionPane.showInputDialog(null, "How many pieces would you like to purchase?"));
                     double tot = (247.75 * quantity);
-                    double total = 0;
                     double price = 0;
                         for(int i = 0; i < items.length; i++) {
                         if(choice == items[i][0]) {
@@ -161,7 +158,6 @@ private static void Calculate() {
                     String itemCode = "1004MOS";
                     int quantity = Integer.parseInt(JOptionPane.showInputDialog(null, "How many pieces would you like to purchase?"));
                     double tot = (180.25 * quantity);
-                    double total = 0;
                     double price = 0;
                         for(int i = 0; i < items.length; i++) {
                         if(choice == items[i][0]) {
@@ -187,7 +183,6 @@ private static void Calculate() {
                     String itemCode = "1005SYW";
                     int quantity = Integer.parseInt(JOptionPane.showInputDialog(null, "How many pieces would you like to purchase?"));
                     double tot = (120.25 * quantity);
-                    double total = 0;
                     double price = 0;
                         for(int i = 0; i < items.length; i++) {
                         if(choice == items[i][0]) {
@@ -213,7 +208,6 @@ private static void Calculate() {
                     String itemCode = "1006SLA";
                     int quantity = Integer.parseInt(JOptionPane.showInputDialog(null, "How many pieces would you like to purchase?"));
                     double tot = (130.50 * quantity);
-                    double total = 0;
                     double price = 0;
                         for(int i = 0; i < items.length; i++) {
                         if(choice == items[i][0]) {
@@ -239,7 +233,6 @@ private static void Calculate() {
                     String itemCode = "1007TSZ";
                     int quantity = Integer.parseInt(JOptionPane.showInputDialog(null, "How many pieces would you like to purchase?"));
                     double tot = (298.50* quantity);
-                    double total = 0;
                     double price = 0;
                         for(int i = 0; i < items.length; i++) {
                         if(choice == items[i][0]) {
@@ -265,7 +258,6 @@ private static void Calculate() {
                     String itemCode = "1008LFS";
                     int quantity = Integer.parseInt(JOptionPane.showInputDialog(null, "How many pieces would you like to purchase?"));
                     double tot = (279.25 * quantity);
-                    double total = 0;
                     double price = 0;
                         for(int i = 0; i < items.length; i++) {
                         if(choice == items[i][0]) {
@@ -291,7 +283,6 @@ private static void Calculate() {
                     String itemCode = "1009TDS";
                     int quantity = Integer.parseInt(JOptionPane.showInputDialog(null, "How many pieces would you like to purchase?"));
                     double tot = (190.00 * quantity);
-                    double total = 0;
                     double price = 0;
                         for(int i = 0; i < items.length; i++) {
                         if(choice == items[i][0]) {
@@ -317,7 +308,6 @@ private static void Calculate() {
                     String itemCode = "1010TAS";
                     int quantity = Integer.parseInt(JOptionPane.showInputDialog(null, "How many pieces would you like to purchase?"));
                     double tot = (170.50 * quantity);
-                    double total = 0;
                     double price = 0;
                         for(int i = 0; i < items.length; i++) {
                         if(choice == items[i][0]) {
